@@ -2,8 +2,7 @@
 
 ![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react) ![Node.js](https://img.shields.io/badge/Node.js-Latest-green?style=for-the-badge&logo=node.js) ![Express.js](https://img.shields.io/badge/Express.js-Latest-lightgrey?style=for-the-badge&logo=express) ![MongoDB](https://img.shields.io/badge/MongoDB-Latest-brightgreen?style=for-the-badge&logo=mongodb) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Latest-38B2AC?style=for-the-badge&logo=tailwind-css) ![Redux](https://img.shields.io/badge/Redux-Toolkit-764ABC?style=for-the-badge&logo=redux)
 
-🚀 An intelligent e-commerce platform combining seamless shopping experiences with AI-powered customer assistance, real-time updates, and an advanced product catalog.
-
+🚀 ShopGo is a next-generation, self-sustaining e-commerce ecosystem. It moves beyond traditional shopping carts by integrating a State-of-the-Art Autonomous Intelligence Layer that handles customer intent, real-time product recommendations, and automated order management.
 ✨ Features • 🛠 Tech Stack • 🚀 Getting Started • 📐 Architecture • 🎮 Demo
 
 ---
@@ -28,36 +27,22 @@ ShopGo modernizes the e-commerce experience by providing:
 
 ## ✨ Features
 
-### 🛍️ Product Catalog & Search
-- **Extensive Categories** — Browse Electronics, Sports, Home, Books, Clothing, and Accessories.
-- **Advanced Search functionality** — Quickly find what you need.
-- **Dynamic Filtering** — Filter items tailored to your exact preferences.
+### 🛍️ Autonomous Catalog & Discovery
+*   **Dynamic Intelligence** — Local `distilgpt2` model classifies user intent in real-time.
+*   **Smart Categorization** — Massive support for Electronics, Sports, Home, Books, Clothing, and Accessories.
+*   **Context-Aware Search** — Filters products based on natural language queries.
 
-### 🤖 AI Customer Support Assistant
-- **Real-time Chat** — Instant answers via Hugging Face Models.
-- **Context-aware Responses** — Designed to handle e-commerce queries smoothly.
-- **Always Online** — 24/7 automated assistance without waiting for human agents.
+### 🤖 Core Intelligence (AI Assistant)
+*   **Greet & Identify** — Warmly greets users and clarifies their specific needs (budget, use case).
+*   **Intelligent Recommendations** — provides curated "Best Fit" matches with links.
+*   **Seamless Upselling** — Suggests complementary products based on cart and browsing history.
+*   **Autonomous Support** — Pulls real-time data from the Order Management System (OMS).
+*   **Human-in-the-Loop Escalation** — Automatically transfers to human agents upon detecting user frustration.
 
-### 🛒 Cart & Checkout
-- **Stateful Shopping Cart** — Managed effectively via Redux Toolkit.
-- **Seamless Modifications** — Easily adjust quantities or remove items.
-- **Checkout Flow** — Follow a streamlined process to complete your purchase.
-
-### 📊 User & Order Dashboard
-- **Full Order History** — Track past and current orders.
-- **Order Status Tracking** — See real-time fulfillment updates.
-- **Profile Management** — Secure and protected personal information access.
-- **Admin Capabilities** — Product and global order management.
-
-### 🔐 Secure Authentication
-- **JWT & bcryptjs** — Modern authentication and secure password hashing.
-- **Role-based Access** — Admin capabilities for product management (create, update, delete).
-- **Protected Environment** — Safe Cross-Origin Resource Sharing (CORS) API handling.
-
-### 🎨 Modern UI/UX
-- **Responsive Layout** — Flawlessly transitions between mobile, tablet, and desktop views.
-- **Interactive UI** — React 19 providing smooth, rapid render performance.
-- **Tailwind Utility Styling** — Beautiful interface customized with scalable utility classes.
+### 💳 Cart, Checkout & Orders
+*   **Persistence Layers** — Stateful cart management via Redux Toolkit with persistent session logic.
+*   **Safe Checkout** — Streamlined verification and simulated payment gateways.
+*   **Global Dashboard** — Manage profiles, track order history, and monitor real-time shipment status.
 
 ---
 
@@ -87,6 +72,39 @@ ShopGo modernizes the e-commerce experience by providing:
 |------------|---------|
 | **JWT** | Secure stateless sessions |
 | **bcryptjs** | Encrypted data hashing |
+
+---
+
+## 🔗 API Reference
+
+### 👤 Authentication & Users
+| Endpoint | Method | Purpose |
+|----------|--------|---------|
+| `/api/user/signup` | POST | Register a new consumer account. |
+| `/api/user/login` | POST | Secure JWT-based authentication. |
+| `/api/user/logout` | GET | Session termination. |
+| `/api/user/check-auth` | GET | Validate session status. |
+
+### 🎁 Product Management
+| Endpoint | Method | Purpose |
+|----------|--------|---------|
+| `/api/products` | GET | Fetch the entire autonomous catalog. |
+| `/api/products` | POST | **[Admin]** Add a new product listing. |
+| `/api/products/:id` | GET | Detailed product view. |
+| `/api/products/:id` | DELETE | **[Admin]** Remove product from catalog. |
+
+### 🛒 Cart & Order Flow
+| Endpoint | Method | Purpose |
+|----------|--------|---------|
+| `/api/cart` | GET | Retrieve user-specific shopping cart. |
+| `/api/cart` | POST | Add or sync items to the cart. |
+| `/api/orders` | POST | Finalize checkout and create order. |
+| `/api/orders/:id` | GET | Real-time status of a specific order. |
+
+### 🧠 Intelligence
+| Endpoint | Method | Purpose |
+|----------|--------|---------|
+| `/api/chatbot/message` | POST | Process messages via AI Engine. |
 
 ---
 
@@ -232,13 +250,11 @@ We welcome contributions! Here's how to get started:
 - 🎨 **Tailwind CSS** — For beautiful utility classes
 - 🧠 **Hugging Face** — For the underlying AI chatbot models
 
-🌟 *Star this repo if you found it helpful!*  
-Built with ❤️
-
-[⬆ Back to Top](#-shopgo--ai-powered-e-commerce-marketplace)
-
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+🌟 _Built with ❤️ for the next generation of autonomous retail._
+[⬆ Back to Top](#-shopgo--autonomous-marketplace-engine)
