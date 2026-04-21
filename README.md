@@ -1,4 +1,4 @@
-# 🛍️ ShopGo — AI-Powered E-commerce Marketplace
+# 🛍️ ShopGo — Autonomous Marketplace Engine 
 
 ![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react) ![Node.js](https://img.shields.io/badge/Node.js-Latest-green?style=for-the-badge&logo=node.js) ![Express.js](https://img.shields.io/badge/Express.js-Latest-lightgrey?style=for-the-badge&logo=express) ![MongoDB](https://img.shields.io/badge/MongoDB-Latest-brightgreen?style=for-the-badge&logo=mongodb) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Latest-38B2AC?style=for-the-badge&logo=tailwind-css) ![Redux](https://img.shields.io/badge/Redux-Toolkit-764ABC?style=for-the-badge&logo=redux)
 
