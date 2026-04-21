@@ -3,7 +3,6 @@
 ![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react) ![Node.js](https://img.shields.io/badge/Node.js-Latest-green?style=for-the-badge&logo=node.js) ![Express.js](https://img.shields.io/badge/Express.js-Latest-lightgrey?style=for-the-badge&logo=express) ![MongoDB](https://img.shields.io/badge/MongoDB-Latest-brightgreen?style=for-the-badge&logo=mongodb) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Latest-38B2AC?style=for-the-badge&logo=tailwind-css) ![Redux](https://img.shields.io/badge/Redux-Toolkit-764ABC?style=for-the-badge&logo=redux)
 
 🚀 ShopGo is a next-generation, self-sustaining e-commerce ecosystem. It moves beyond traditional shopping carts by integrating a State-of-the-Art Autonomous Intelligence Layer that handles customer intent, real-time product recommendations, and automated order management.
-✨ Features • 🛠 Tech Stack • 🚀 Getting Started • 📐 Architecture • 🎮 Demo
 
 ---
 
@@ -225,6 +224,15 @@ mern/
 
 ---
 
+## 📊 Data Schema Overview
+
+*   **Users**: Unified credentials, role-based access tokens (Admin/User), and order history references.
+*   **Products**: Schema includes `category`, `stockCount`, `rating`, and AI-optimizable descriptors.
+*   **Orders**: State-tracked (Pending, Shipped, Delivered) with full product snapshot links.
+*   **Cart**: Aggregated collection mapped to User sessions for cross-device consistency.
+
+---
+
 ## 🔒 Security & Privacy
 
 | Feature | Description |
@@ -244,17 +252,15 @@ We welcome contributions! Here's how to get started:
 4. 📤 Push to branch (`git push origin feature/amazing-feature`)
 5. 🔃 Open a Pull Request
 
+---
+
 ## 🙏 Acknowledgments
 - ⚡ **React & Vite** — For rapid frontend development
 - 🐘 **MongoDB & Express** — For scalable backend architecture
 - 🎨 **Tailwind CSS** — For beautiful utility classes
 - 🧠 **Hugging Face** — For the underlying AI chatbot models
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+---
 
 🌟 _Built with ❤️ for the next generation of autonomous retail._
 [⬆ Back to Top](#-shopgo--autonomous-marketplace-engine)
